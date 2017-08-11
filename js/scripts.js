@@ -8,8 +8,21 @@ $(document).ready(function(){
     var logoInput = parseInt($("input:radio[name=logo]:checked").val());
     var codeInput = parseInt($("#code").val());
 
-    $("#design, #ruby, #csharp, .track-form").hide();
-
+    if (isNaN(sizeInput)) {
+      $(".help-inline").show();
+    }else if (isNaN(photoInput)) {
+      $(".help-inline").show();
+    }else if (isNaN(interestInput)) {
+      $(".help-inline").show();
+    }else if (isNaN(interestInput)){
+      $(".help-inline").show();
+    }else if (isNaN(logoInput)){
+      $(".help-inline").show();
+    }else if (isNaN(codeInput)){
+      $(".help-inline").show();
+    }else{
+      $("#design, #ruby, #csharp, .track-form, .page-header, .intro").hide();
+    }
 
     var result = sizeInput + photoInput + interestInput + logoInput + codeInput;
     console.log(sizeInput);
@@ -19,15 +32,8 @@ $(document).ready(function(){
     console.log(codeInput);
     console.log(result);
 
-    // if (result >= 11){
-    //   $("#design, .panel").show();
-    // }else if (result > 5 && result <=10){
-    //   $("#ruby, .panel").show();
-    // }else if (result <=5){
-    //   $("#csharp, .panel").show();
-    // }
     if (result <= 5){
-      $("#c, .panel").show();
+      $("#csharp, .panel").show();
     }else if (result > 5 && result <=10){
       $("#ruby, .panel").show();
     }else if (result >= 11){
