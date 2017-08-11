@@ -8,6 +8,7 @@ $(document).ready(function(){
     var logoInput = parseInt($("input:radio[name=logo]:checked").val());
     var codeInput = parseInt($("#code").val());
 
+// checks value of user input
     if (isNaN(sizeInput)) {
       $(".help-inline").show();
     }else if (isNaN(photoInput)) {
@@ -25,12 +26,6 @@ $(document).ready(function(){
     }
 
     var result = sizeInput + photoInput + interestInput + logoInput + codeInput;
-    console.log(sizeInput);
-    console.log(photoInput);
-    console.log(interestInput);
-    console.log(logoInput);
-    console.log(codeInput);
-    console.log(result);
 
     if (result <= 5){
       $("#csharp, .panel").show();
