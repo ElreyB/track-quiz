@@ -8,7 +8,7 @@ $(document).ready(function(){
     var logoInput = parseInt($("input:radio[name=logo]:checked").val());
     var codeInput = parseInt($("#code").val());
 
-    // $("#design, #ruby, #c, #track-form").hide();
+    $("#design, #ruby, #csharp, .track-form").hide();
 
 
     var result = sizeInput + photoInput + interestInput + logoInput + codeInput;
@@ -19,6 +19,13 @@ $(document).ready(function(){
     console.log(codeInput);
     console.log(result);
 
+    // if (result >= 11){
+    //   $("#design, .panel").show();
+    // }else if (result > 5 && result <=10){
+    //   $("#ruby, .panel").show();
+    // }else if (result <=5){
+    //   $("#csharp, .panel").show();
+    // }
     if (result <= 5){
       $("#c, .panel").show();
     }else if (result > 5 && result <=10){
@@ -26,20 +33,12 @@ $(document).ready(function(){
     }else if (result >= 11){
       $("#design, .panel").show();
     }
-// for debugging
-    // console.log(sizeInput);
-    // console.log(photoInput);
-    // console.log(interestInput);
-    // console.log(logoInput);
-    // console.log(codeInput);
-    // console.log(result);
 
   });
 
-
 // to return to survey
-  // $("#return").click(function(){
-  //   $("#uhura, #scotty, #spock, #kirk, .panel").hide();
-  //   $(".quiz").show();
-  // });
+  $("#return").click(function(){
+    $("#design, #ruby, #csharp, .panel").hide();
+    $(".track-form").show();
+  });
 });
