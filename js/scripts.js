@@ -29,16 +29,20 @@ $(document).ready(function(){
 
     if (result <= 5){
       $("#csharp, .panel").show();
+      $("body").addClass("result-background");
     }else if (result > 5 && result <=10){
       $("#ruby, .panel").show();
+      $("body").addClass("result-background");
     }else if (result >= 11){
       $("#design, .panel").show();
+      $("body").addClass("result-background");
     }
 
   });
 
 // to return to survey
   $("#return").click(function(){
+    $("body").removeClass("result-background");
     $("#design, #ruby, #csharp, .panel").hide();
     $(".track-form").show();
   });

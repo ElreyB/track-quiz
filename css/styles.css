@@ -56,14 +56,6 @@ a button {
   color: black;
 }
 
-.yellow {
-  background-color: #FFC825;
-}
-
-.red {
-  background-color: blue;
-}
-
-.blue {
-  background-color: blue;
+.result-background {
+  background-image: url(../img/result_background.jpg);
 }
