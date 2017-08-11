@@ -12,7 +12,7 @@ This page will suggest a track at Epicodus based on you choices.
 
 * Copy the url for this repo
 * In your terminal use "git clone (repo url)"
-* Click on the index.html file to open or go to 
+* Click on the index.html file to open or go to https://elreyb.github.io/track-quiz/
 
 ## Known Bugs
 
