@@ -21,6 +21,10 @@ $(document).ready(function(){
 
     if (result <= 5){
       $("#c, .panel").show();
+    }else if (result > 5 && result <=10){
+      $("#ruby, .panel").show();
+    }else if (result >= 11){
+      $("#design, .panel").show();
     }
 // for debugging
     // console.log(sizeInput);
