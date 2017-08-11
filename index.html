@@ -14,8 +14,38 @@
       </div>
       <p>So you are thinking of attending <a href="https://www.epicodus.com/">Epicodus</a> but are not sure which track to take. Take this little survey and hopefully it will head you to the track of your dreams.</p>
       <div class="text-danger">
-        <p>WARNING! This survey in no way dictates which track to take. Follow your onwn path</p>
+        <p>WARNING! This survey in no way dictates which track to take. Follow your own path.</p>
       </div>
+
+      <form id="track-form" class="well">
+        <div class="form-group">
+          <label for="size">What company size would like to work in?</label>
+          <select class="form-control" id="size">
+            <option value=""></option>
+            <option value="1">Big, lots of people and competition</option>
+            <option value="2">Smaller to medium, fewer people and being apart of something brand new</option>
+            <option value="3">I can work anywehre</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="interest">What is more interesting to you?</label>
+          <select class="form-control" id="interest">
+            <option value=""></option>
+            <option value="1">AI</option>
+            <option value="3">Design</option>
+            <option value="2">Apps</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="code">What piece of code looks interesting to you?</label>
+          <select class="form-control" id="code">
+            <option value=""></option>
+            <option value="3">console.log("Hello!")</option>
+            <option value="2">puts "Hello!"</option>
+            <option value="1">Console.WriteLine("Hello!")</option>
+          </select>
+        </div>
+      </form>
     </div>
   </body>
 </html>
